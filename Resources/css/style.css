@@ -1,0 +1,199 @@
+/* need to adjust as needed - use a template and learn to do it myself!
+Color Palette:
+sky blue: #6dc0d6;
+light blue: #92d1de;
+lt brown: #756360;
+dk brown: #5a4741;
+white: #fdfbfd;
+
+
+Font Family in CSS 
+font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif;
+*/
+
+/*-------------------*/
+/*BASIC SETUP*/
+/*-------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html,
+body {
+    background-color: #756360;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    /*overflow-x: hidden;*/
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+li {
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f42e7a;
+    padding: 20px 0;
+    font-size: 200%;
+}
+
+h2:after {
+    display: block;
+    height: 3px;
+    background-color: #24232c;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*-------------------*/
+/*REUSABLE COMPONENTS*/
+/*-------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.col p {
+    line-height: 145%;
+}
+
+/*-------------------*/
+/*HEADER*/
+/*-------------------*/
+header {
+    background-image: linear-gradient(rgba(36, 35, 44, 0.5), rgba(36, 35, 44, 0.5)), urlimage();
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header h1 {
+    color: #f42e7a;
+    padding: 10px;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
+    font-stretch: expanded;
+    letter-spacing: 4px;
+}
+
+header h3 {
+    color: #f1eff1;
+    margin: 0px 12px;
+}
+
+.page-title {
+    position: absolute;
+    width: 1140px;
+    top: 20%;
+    left: 60%;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: 40px 40px 0 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fdfbfd;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 3px solid #6dc0d6;
+}
+
+/*-------------------*/
+/*ABOUT*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*PROJECTS*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*CONTACTF*/
+/*-------------------*/
+
+
+
+/*-------------------*/
+/*FOOTER*/
+/*-------------------*/
+
+
+
+.social-links li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50px;
+    margin: 20px auto;
+    padding-left: 10px;
+    box-sizing: content-box;
+}
+
+*.social-links li a:link,
+.social-links li a:visited {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 0;
+    color: #f1eff1;
+    text-decoration: none;
+    font-size: 150%;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    border-bottom: 3px solid #f42e7a;
+}
+
+
+
